@@ -1,3 +1,3 @@
-*/config.json
-*/.env
+frontend_files/config.json
+backend_node/.env
 backend_node/node_modules
