@@ -1,0 +1,3 @@
+# Nurse Map | Helms Home Care
+
+A web application for tracking nurse locations and storing a variety of information regarding those nurses. Data is pulled in real time to ensure all the information being displayed is the most up to date. Additional functionality includes locating nurses within a given radius of an address, plotting routes between nurses and a provided address, syncing editable information between users, and filtering nurses based on a variety of criteria.
