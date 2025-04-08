@@ -1,0 +1,1 @@
+cmd /k live-server --entry-file=./index.html --no-browser --verbose

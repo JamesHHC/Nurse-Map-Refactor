@@ -1,0 +1,37 @@
+<div id="editModal" class="modal fade" role="dialog" data-backdrop="static">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div id="modalTitle" class="modal-header">
+                <!-- Title -->
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="form-group">
+                    <!-- Category dropdown -->
+                    <label for="catSelect">Category</label>
+                    <select tabindex="-1" class="custom-select bottomMargin" id="catSelect">
+                        <option selected value='NO CATEGORY' class='filterOption'></option>
+                        <option value='FULL / PART TIME' class='filterOption'>Full / Part Time</option>
+                        <option value='NEWLY HIRED' class='filterOption'>Newly Hired</option>
+                        <option value='IDLE RN' class='filterOption'>Idle RN</option>
+                        <option value='INFUSION RN' class='filterOption'>Infusion RN</option>
+                    </select>
+                    <!-- Availability text box -->
+                    <label for="availBox">Availability</label>
+                    <textarea tabindex="-1" class="form-control bottomMargin" id="availBox" rows="3"></textarea>
+                    <!-- Notes text box -->
+                    <label for="noteBox">Important Notes</label>
+                    <textarea tabindex="-1" class="form-control bottomMargin" id="noteBox" rows="3"></textarea>
+                    <!-- Skills text box -->
+                    <label for="skillBox">Skills</label>
+                    <textarea tabindex="-1" class="form-control" id="skillBox" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" tabindex="-1" id="editCancel" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button>
+                <button type="button" tabindex="-1" id="editConfirm" class="btn btn-success" data-dismiss="modal">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
