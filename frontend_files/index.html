@@ -17,7 +17,6 @@
 
     <!-- frontend_files -->
     <link rel="stylesheet" href="./style.css">
-    <script src="./scripts/main.js"></script>
 </head>
 <body>
     <!-- PAGE LOADING OVERLAY -->
@@ -82,11 +81,12 @@
     </div>
 </body>
 <footer>
+    <script src="./main.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
             // Hide loading overlay
-            document.getElementById("page-loading").style.display = 'none';
+            // document.getElementById("page-loading").style.display = 'none';
             // Update help link
             $.getJSON('./config.json', function(data) {
                 document.getElementById('help-button').href = data['helpLink'];

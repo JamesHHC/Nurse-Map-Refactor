@@ -1,0 +1,13 @@
+{
+	"category": "Category",
+	"skills": "Hours or Desc.",
+	"name": "Name",
+	"training": "Training",
+	"availability": "Availability",
+	"notes": "Important Notes",
+	"activated": "Activated Date",
+	"lat": "Latitude",
+	"long": "Longitude",
+	"addr": "Address",
+	"phone": "Telephone"
+}

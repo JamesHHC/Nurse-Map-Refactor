@@ -18,6 +18,11 @@ SHEET_KEY="XX"
 
 # Sheet ID for URL
 SHEET_ID="XX"
+
+# IPS ##############
+
+# IP for Open Route Service instance
+ORS_IP="XX"
 ```
 
 ## frontend_files
@@ -26,6 +31,8 @@ SHEET_ID="XX"
 `config.json`
 ```.json
 {
-  "helpLink": "XX"
+  "helpLink": "XX",
+  "nodeIP": "XX",
+  "nodePort": "XX"
 }
 ```

@@ -18,6 +18,7 @@ module.exports = {
 				try {
 					const result = JSON.parse(body).values;
 					const cleanArray = [];
+					let skipOffset = 0;
 					// Loop through each result (index 0 is comprised of column names)
 					for (let i = 1; i < result.length; i++) {
 						const aNurse = {};
@@ -28,6 +29,15 @@ module.exports = {
 							// Use title as key and assign corresponding value
 							aNurse[result[0][k]] = (cell == undefined || cell.trim() == '') ? null : cell;
 						}
+						// Skip if name missing or coords invalid
+						if (aNurse['Name'] == null || isNaN(aNurse['Latitude']) || isNaN(aNurse['Longitude'])) {
+							console.log('\x1b[33m%s\x1b[0m', `WRN// Skipping nurse at row ${i + 1}`);
+							skipOffset++;
+							continue;
+						}
+						// Add additional keys for later use
+						aNurse['Row'] = i + 1;
+						// Append JSON to array
 						cleanArray.push(aNurse);
 					}
 					resolve(cleanArray);
@@ -39,4 +49,4 @@ module.exports = {
 			});
 		});
 	},
-}
+};

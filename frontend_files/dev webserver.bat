@@ -1,1 +1,1 @@
-cmd /k live-server --entry-file=./index.html --no-browser --verbose
+powershell.exe -NoExit live-server --entry-file=./index.html --no-browser --verbose

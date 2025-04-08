@@ -1,1 +1,1 @@
-cmd /k node .
+powershell.exe -NoExit node .
