@@ -7,5 +7,9 @@ module.exports = {
 	urls: {
 		// Sheet ID for URL
 		sheetID: process.env.SHEET_ID,
-	}
+	},
+	options: {
+		// Port for node server
+		port: 3000,
+	},
 }
